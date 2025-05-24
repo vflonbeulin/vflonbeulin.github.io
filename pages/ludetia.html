@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <title>Soclia</title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="container-page">
+            <a href="../index.html">Home</a>
+            <h1>Ludetia</h1>
+            <h2>YOLO in board games</h2>
+            <span class="badge bg-yolo">YOLO</span>
+            <span class="badge bg-flask">Flask</span>
+            <div class="card-project-date">2023 - Personal project</div>
+            <p>
+                As part of my exploration into computer vision, I developed a personnal project focused on object detection using the YOLO (You Only Look Once) 
+                model with the OpenCV (cv2) library. The goal was to detect and recognize pieces from various board games in real-time.
+            </p>
+            <h3>Dataset</h3>
+            <p>
+                To begin, I searched for publicly available datasets online that featured board game pieces. 
+                However, to enrich the diversity and specificity of the dataset, I also took photos of pieces from my own board games (like Carcassonne). 
+                This allowed me to tailor the dataset more closely to the objects I wanted the model to recognize.
+            </p>
+            <h3>Preprocessing and Data Augmentation</h3>
+            <p>
+                Once the images were collected, I performed preprocessing tasks to clean the data. 
+                This included resizing all images to a consistent format, adjusting lighting where necessary, 
+                and converting them to suitable color formats. The goal was to create a uniform and clean dataset for better model performance.
+            </p>
+            <p>
+                To increase the size and variability of the dataset, I applied data augmentation techniques such as rotation, flipping, zooming, and brightness adjustments. 
+                This helped the model generalize better and improved its robustness in different real-world scenarios.
+            </p>
+            <h3>Model Training with YOLO</h3>
+            <p>
+                I then used the YOLO algorithm for training the object detection model. YOLO is well-suited for real-time applications due to its speed and accuracy. 
+                Training was conducted on the augmented dataset, using appropriate annotations for the various board game pieces.
+            </p>
+            <h3>Flask Web Application for Real-Time Testing</h3>
+            <p>
+                To test the model in a user-friendly and interactive way, I developed a simple web application using Flask. 
+                The application connects to a webcam and allows real-time detection of board game pieces using the trained YOLO model. 
+                This provided a practical demonstration of the system’s capabilities.
+            </p>
+            
+            <h3>Screenshots :</h3>
+            <a target="_blank" href="../images/screenshot-ludetia-1.jpg">
+                <img src="../images/screenshot-ludetia-1.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-ludetia-2.jpg">
+                <img src="../images/screenshot-ludetia-2.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-ludetia-3.jpg">
+                <img src="../images/screenshot-ludetia-3.jpg">
+            </a>
+        </div>
+        <footer>
+            <small>© Copyright 2023 | Victorien Flon-Beulin <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">RGPD</a></small>
+        </footer>
+    </body>
+</html>
