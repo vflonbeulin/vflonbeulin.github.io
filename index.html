@@ -21,18 +21,14 @@
                     <a href="https://maps.app.goo.gl/EFk4X5dK37oVHuKT9" target="_blank">
                         <i class='bx bxs-map bx-md bx-border-circle'></i>
                     </a>
-                    <a href="https://maps.app.goo.gl/EFk4X5dK37oVHuKT9">
+                    <a class="mail" href="#">
                         <i class='bx bxs-envelope bx-md bx-border-circle'></i>
                     </a>
                     <script>
-                        let c = 'oJScoUEiBzciDT0kLv5zpt==' //'bWFpbHRvOnZmbG9uYmV1bGluQGdtYWlsLmNvbQ=='
+                        let c = "oJScoUEiBaMzoT9hLzI1oTyhDTqgLJyfYzAioD==" // obfuscation r(btoa('mailto:xxxxxx'))
                         let r = (s) => { return s.replace(/[a-z]/gi, function (s) { return String.fromCharCode(s.charCodeAt(0) + (s.toLowerCase() < 'n' ? 13 : -13)) }) }
-                        let e = document.querySelector('.icon')
-                        let a = document.createElement('a')
-                        a.innerHTML = e.innerHTML
-                        a.classList.add('icon')
-                        a.setAttribute('href', atob(r(c)))
-                        e.parentNode.replaceChild(a, e)
+                        let e = document.querySelector('.mail')
+                        e.setAttribute('href', atob(r(c)))
 			        </script>
                 </div>
                 <nav>
