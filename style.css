@@ -24,23 +24,12 @@ body {
     margin: 30px auto;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav ul li {
-    flex: 1 1 auto;
-    text-align: center;
-    position: relative;
-}
-
 #banner {
     margin: 50px 0; /* retirer margin ... */
     /*border: 1px solid blue;*/
 }
 
-#banner a:link {
+#banner a {
     text-decoration: none;
     color: #ffffff;
     font-size: x-large;
@@ -75,22 +64,28 @@ nav ul li {
     /*border: 1px solid red;*/
 }
 
-.me a {
-    height: 32px;
+.me a .bx { /* overwrite */
+    border-color: #ffffff;
+    background-color: #242629;
 }
 
-.menu {
+nav {
     margin:40px 0;
+    /*border: 1px solid blue;*/
 }
 
-.menu-items {
+nav ul {
+    padding:0;
     display: flex;
-    /*gap: 40px;*/
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
-.menu-items a {
-    text-decoration: none;
-    color: #ffffff; 
+nav ul li {
+    /*flex: 1 1 auto;*/
+    /*text-align: center;*/
+    /*position: relative;*/
+    /*border: 1px solid red;*/
 }
 
 .about {
@@ -267,20 +262,21 @@ footer {
 
 @media (min-width: 992px) {
 
-   #banner {
+    #banner {
         display: flex;
         justify-content: space-around;
     }
 
     .me {
-        /*border: 1px solid red;*/
+        justify-content: flex-start;
+        margin-left: 100px;
     }
 
-    .menu {
+    nav {
         margin-right: 20px;
     }
 
-    .menu-items {
+    nav ul {
         gap: 40px;
     }
 
@@ -291,11 +287,6 @@ footer {
 }
 
 @media (min-width: 1200px) {
-
-    .me {
-        margin-left: 100px;
-        justify-content:flex-start;
-    }
 
     .about {
         text-align: left;
@@ -325,13 +316,6 @@ footer {
 @media (min-width: 1400px) {
 
     
-}
-
-.logo {
-    display: flex;
-    border-radius:100%;
-    padding: .7em;
-    background-color: #242629;
 }
 
 .table-skills {

@@ -12,21 +12,34 @@
         <div class="container">
             <div id="banner">
                 <div class="me">
-                    <a href="https://github.com/vflonbeulin" class="logo" target="_blank">
-                        <img src="images/logos/github.png" />
+                    <a href="https://github.com/vflonbeulin" target="_blank">
+                        <i class='bx bxl-github bx-md bx-border-circle'></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/victorien-flon-beulin-039ba8299" class="logo" target="_blank">
-                        <img src="images/logos/linkedin.png" />
+                    <a href="https://www.linkedin.com/in/victorien-flon-beulin-039ba8299" target="_blank">
+                        <i class='bx bxl-linkedin-square bx-md bx-border-circle'></i>
                     </a>
-                    <a href="https://maps.app.goo.gl/EFk4X5dK37oVHuKT9" class="logo" target="_blank">
-                        <img src="images/logos/map.png" />
+                    <a href="https://maps.app.goo.gl/EFk4X5dK37oVHuKT9" target="_blank">
+                        <i class='bx bxs-map bx-md bx-border-circle'></i>
                     </a>
+                    <a href="https://maps.app.goo.gl/EFk4X5dK37oVHuKT9">
+                        <i class='bx bxs-envelope bx-md bx-border-circle'></i>
+                    </a>
+                    <script>
+                        let c = 'oJScoUEiBzciDT0kLv5zpt==' //'bWFpbHRvOnZmbG9uYmV1bGluQGdtYWlsLmNvbQ=='
+                        let r = (s) => { return s.replace(/[a-z]/gi, function (s) { return String.fromCharCode(s.charCodeAt(0) + (s.toLowerCase() < 'n' ? 13 : -13)) }) }
+                        let e = document.querySelector('.icon')
+                        let a = document.createElement('a')
+                        a.innerHTML = e.innerHTML
+                        a.classList.add('icon')
+                        a.setAttribute('href', atob(r(c)))
+                        e.parentNode.replaceChild(a, e)
+			        </script>
                 </div>
-                <nav class="menu">
-                    <ul class="menu-items">
-                        <li class="act menu-item"><a href="#about">Home</a></li>
-                        <li class="menu-item"><a href="#skills">Skills</a></li>
-                        <li class="menu-item"><a href="#projects">Projects</a></li>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
                     </ul>
                 </nav>
             </div>
