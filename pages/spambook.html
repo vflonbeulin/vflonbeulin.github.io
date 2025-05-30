@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <title>Spambook</title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="container-page">
+            <a href="../index.html">Home</a>
+            <h1>Spambook</h1>
+            <h2>Use classification to predict whether a message is spam or not</h2>
+            <span class="badge bg-sklearn">Sklearn</span>
+            <span class="badge bg-re">RegEx</span>
+            <span class="badge bg-flask">Flask</span>
+            <div class="card-project-date">2022 - Simplon project</div>
+            <h3>About</h3>
+            <p>
+                The goal was to develop a classifying spam messages.
+            </p>
+            <p>
+                The project began with <b>data cleaning</b>. I removed duplicate messages to prepare the dataset for analysis.
+            </p>
+            <p>
+                Next, I focused on <b>feature extraction</b>, using regular expressions <b>(RegEx)</b>. I engineered several features such as:
+                <ul>
+                    <li>The total number of words in a message</li>
+                    <li>The presence of a phone number</li>
+                    <li>The presence of a URL</li>
+                    <li>The presence of an email address</li>
+                    <li>The total number of special characters</li>
+                    <li>etc...</li>
+                </ul>
+                To better understand the dataset, I also created a wordcloud to visually represent the most frequent words appearing in spam and non-spam messages.
+            </p>
+            <p>
+                Once the features were extracted, I normalized the data to improve the performance of the machine learning algorithms.
+                Then I built a machine learning pipeline, where I tested several models like <b>DecisionTreeClassifier</b> or <b>RandomForestClassifier</b> 
+                and used <b>GridSearchCV</b> to find the best parameters for our models.
+                These models were trained to classify messages as either "spam" or "ham" (non-spam).
+            </p>
+            <p>
+                To make the project more interactive and accessible, I developed a <b>Flask application</b> that allows users to input a message and get a real-time classification result.
+                This project helped me apply the full machine learning workflow, from preprocessing to model deployment.
+            </p>
+            <h3>Screenshots :</h3>
+            <a target="_blank" href="../images/screenshot-spambook-1.jpg">
+                <img src="../images/screenshot-spambook-1.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-spambook-2.jpg">
+                <img src="../images/screenshot-spambook-2.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-spambook-3.jpg">
+                <img src="../images/screenshot-spambook-3.jpg">
+            </a>
+            <div class="btn"><a href="https://github.com/dataIA-2021/G4_SpamClassifier" target="_blank">Source code</a></div>
+        </div>
+        <footer>
+            <small>© Copyright 2023 | Victorien Flon-Beulin <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">RGPD</a></small>
+        </footer>
+    </body>
+</html>

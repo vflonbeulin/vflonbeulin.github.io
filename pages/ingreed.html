@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <title>Ingreed</title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="container-page">
+            <a href="../index.html">Home</a>
+            <h1>Ingreed</h1>
+            <h2>Scraping data and predict your IT salary, get rich !</h2>
+            <span class="badge bg-bs">BeautifulSoup</span>
+            <span class="badge bg-flask">Flask</span>
+            <span class="badge bg-mongo">MongoDB</span>
+            <div class="card-project-date">2022 - Simplon project</div>
+            <h3>About</h3>
+            <p>
+            The main goal was to predict salaries in IT for an user, using data collected from Indeed job postings. 
+            </p>
+            <p>
+            This project combines <b>web scraping</b>, <b>data preprocessing</b>, <b>regression modeling</b>, and a <b>Flask</b> application for interactive presentation.
+            </p>
+            <p>
+                With my team, we wanted to predict salary ranges based on <b>job descriptions and features</b> and build an end-to-end ML pipeline from data collection to deployment.
+            </p>
+            <p>
+                We used <b>BeautifulSoup</b>, a Python library, to scrape job listings from Indeed.com The scraping process extracted job titles, company names, locations, salary estimates, job descriptions etc...
+            </p>
+            <p>
+                After scraping, we cleaned and processed the data:
+                <ul>
+                    <li>Handled missing values</li>
+                    <li>Extracted numeric values from salary strings</li>
+                    <li>Converted categorical variables using one-hot encoding</li>
+                    <li>Performed feature engineering</li>
+                    <li>Split the dataset into training and test sets</li>
+                </ul>
+            </p>
+            <p>
+                We had good results with a simple <b>Random Forest Regressor</b> (screenshot) and we evaluated model using metrics like MAE (Mean Absolute Error) and MSE (Mean Squared Error).
+            </p>
+            <p>
+                Finally, I built a Flask web application. This project gave me hands-on experience <b>web scraping</b> and <b>supervised regression</b>.
+            </p>
+            <h3>Screenshots :</h3>
+            <a target="_blank" href="../images/screenshot-ingreed-1.jpg">
+                <img src="../images/screenshot-ingreed-1.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-ingreed-2.jpg">
+                <img src="../images/screenshot-ingreed-2.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-ingreed-3.jpg">
+                <img src="../images/screenshot-ingreed-3.jpg">
+            </a>
+            <div class="btn"><a href="https://github.com/dataIA-2021/salaire_G3" target="_blank">Source code</a></div>
+        </div>
+        <footer>
+            <small>© Copyright 2023 | Victorien Flon-Beulin <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">RGPD</a></small>
+        </footer>
+    </body>
+</html>

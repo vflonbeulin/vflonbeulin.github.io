@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <title>Sentiment analysis</title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="container-page">
+            <a href="../index.html">Home</a>
+            <h1>Sentiment analysis</h1>
+            <h2>Use transformers to predict customer sentiment</h2>
+            <span class="badge bg-camembert">CamemBERT</span>
+            <div class="card-project-date">2022 - MySeriousGame</div>
+            <h3>A history of CamemBERT !</h3>
+            <p>
+                As a continuation of my work-study program at My-Serious-Game, 
+                I carried out a Deep Learning project using the CamemBERT library (Transformers) on satisfaction survey responses collected at the end of modules on their LMS. 
+                Learners have the opportunity to leave comments reflecting their experience with the module.
+            </p>
+            <p>
+                First, with the help of a subject-matter expert, I labeled a dataset (as positive, negative, or neutral) based on customer satisfaction 
+                feedback from EdMill. A total of 1,400 entries were labeled.
+            </p>
+            <p>
+                Next, I prepared the data by cleaning and tokenizing the text.
+            </p>
+            <p>
+                I then adapted the pre-trained model for sentiment analysis by modifying the layers (Dense, etc.) for classification.
+            </p>
+            <p>
+                After that, I divided the data into batches and configured training parameters such as the learning rate, number of epochs, and optimizer. For sentiment analysis, a moderate number of epochs (e.g., 2 to 5) is often sufficient.
+            </p>
+            <p>
+                The final step was training the model. I monitored the loss and accuracy during training to avoid overfitting and to ensure that the model was learning effectively.
+            </p>
+            <h3>Screenshots :</h3>
+            <a target="_blank" href="../images/screenshot-sentimentanalysis-1.jpg">
+                <img src="../images/screenshot-sentimentanalysis-1.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-sentimentanalysis-2.jpg">
+                <img src="../images/screenshot-sentimentanalysis-2.jpg">
+            </a>
+        </div>
+        <footer>
+            <small>© Copyright 2023 | Victorien Flon-Beulin <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">RGPD</a></small>
+        </footer>
+    </body>
+</html>
