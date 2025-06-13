@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <head>
+        <title>A voix haute</title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="container-page">
+            <a href="../index.html">Home</a>
+            <h1>A voix haute</h1>
+            <h2>Facilitate the semantic analysis & vocabulary of students for the French baccalaureate</h2>
+            <span class="badge bg-nlp">NLP</span>
+            <span class="badge bg-mediapipe">MediaPipe</span>
+            <span class="badge bg-fastapi">FastAPI</span>
+            <span class="badge bg-docker">Docker</span>
+            <div class="card-project-date">2023 - MySeriousGame</div>
+            <h3>Improve our learners' speech...</h3>
+            <p>
+                "A voix haute" was my second project in my work-study at MySeriousGame, in collaboration with <a target="_blank" href="https://www.cned.fr/">CNED</a>.
+            </p>
+            <p>
+                the goal was to develop a POC (Proof of Concept) AI solution that could study the grammatical structure of sentences and identify 
+                the relationships between words in speech to produce a prediction on the level of oral expression.
+            </p>
+            <p>
+                There was a bonus : I had to spot the candidates' parasitic gestures with the help of a camera 
+                (e.g. combing their hair, scratching their nose, etc... not good for oral presentation :) 
+            </p>
+            <p>
+                I therefore used NLP and computer vision techniques for this project.
+            </p>
+            <p> 
+                At the start of the project, I didn't have much data. So I went looking for open source datasets to complete my data. I took the ted talks.
+                Although these speeches are of a higher quality and not representative of what a candidate would produce on the first
+                try, I decide to embark on the analysis and creation of a 1st machine learning algorithm on these data, which will serve as studies.
+            </p>
+            <h3>Cleaning</h3>
+            <p>
+                I used SpaCy to clean the data, in order :
+                <ul>
+                    <li>I've turned every speech into lower case</li>
+                    <li>
+                        I've normalized the data into a standard Unicode format is necessary to ensure
+                        compatibility and consistency, especially when handling texts containing
+                        special or non-ASCII characters.
+                    </li>
+                    <li>
+                        I've removed punctuation marks to simplify the text and focus on key words,
+                        eliminating characters that could be sources of noise or confusion.
+                    </li>
+                    <li>
+                        I haven't removed the stopwords and apostrophes because I want to keep the meaning of the
+                        words and the logical connectors (to be able to count them) before going through the speeches with SpaCy.
+                    </li>
+                    <li>
+                        Finally, I ran each speech through functions either to generate familiar
+                        words, quotations (data augementation) or to remove vocabulary, logical
+                        connectors (data reduction).
+                    </li>
+                </ul>
+            </p>
+            <h3>TF-IDF</h3>
+            <p>
+                I have trained my model with TF-IDF method to prepare my text data. Using TF-IDF transforms the raw text into a meaningful set
+                of features, highlighting the relative importance of words in each document.
+                This approach should help my model to understand and efficiently extract patterns in text data, enabling improved prediction performance.
+            </p>
+            <h3>About MediaPipe</h3>
+            <p>
+                To track down parasitic gestures, I used Google's <a target="_blank" href="https://ai.google.dev/edge/mediapipe/solutions/guide">MediaPipe library</a>. This library enables
+                to track hand movements in a video in real time, with precise and detailed analysis.
+            </p>
+            <p>
+                Avoiding distracting gestures during a speech is crucial to maintaining the audience's attention on
+                the main message. Mastering gestures allows the candidate to maintain better eye contact
+                and create stronger engagement with the audience.
+            </p>
+            <h3>The End and feedback</h3>
+            <p>
+                I leveraged FastAPI to develop the backend for this proof-of-concept (POC). To ensure portability and ease of deployment, 
+                I then containerized the entire application using Docker.
+            </p>
+            <p>
+                This intense year-long AI apprenticeship, culminating in two projects, significantly deepened my theoretical and practical AI knowledge. 
+                I gained hands-on experience developing AI applications with Python libraries (SpaCy, PyTorch) and Docker. 
+                This experience highlighted the importance of data management, algorithm implementation, teamwork, and project delivery, 
+                reinforcing that AI is also about problem-solving and understanding business needs. 
+                I'm excited to apply and further develop these skills in the future of AI and e-learning.
+            </p>
+            <h3>Offcial screenshots :</h3>
+            <a target="_blank" href="../images/screenshot-avoixhaute-1.jpg">
+                <img src="../images/screenshot-avoixhaute-1.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-avoixhaute-2.jpg">
+                <img src="../images/screenshot-avoixhaute-2.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-avoixhaute-3.jpg">
+                <img src="../images/screenshot-avoixhaute-3.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-avoixhaute-4.jpg">
+                <img src="../images/screenshot-avoixhaute-4.jpg">
+            </a>
+        </div>
+        <footer>
+            <small>© Copyright 2023 | Victorien Flon-Beulin <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">RGPD</a></small>
+        </footer>
+    </body>
+</html>
