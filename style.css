@@ -19,7 +19,7 @@ body {
     margin: 50px auto 0;
 }
 
-.container > h2 {
+.container > h1,h2 {
     text-align: center;
     margin: 30px auto;
 }
@@ -280,6 +280,11 @@ footer {
 
 @media (min-width: 1200px) {
 
+    .container > h1 {
+        text-align: left;
+        margin: 30px 90px;
+    }
+    
     .about {
         text-align: left;
         margin-left: 50px;
