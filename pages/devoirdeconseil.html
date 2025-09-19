@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <title>Devoir de conseil</title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="container-page">
+            <a href="../index.html">Home</a>
+            <h1>Devoir de conseil</h1>
+            <h2></h2>
+            <span class="badge bg-bs">React</span>
+            <span class="badge bg-mistral">Mistral</span>
+            <span class="badge bg-fastapi">fastAPI</span> 
+            <span class="badge bg-mongo">MongoDB</span>
+            <div class="card-project-date">2025</div>
+            <p>
+                <i>Devoir de conseil</i> est un POC IA juridique utilisant la puissance des LLM Mistral à destination des experts-comptables. Ce projet est
+                développé conjointement avec Travis Morisson, expert-comptable en Centre-Val de Loire.
+            </p>
+            <h3>Objectif</h3>
+                L'expert-comptable a un devoir d'information et de conseil envers son client. Tout manquement peut entraîner une condamnation à indemniser son client, mais aussi à des sanctions disciplinaires.
+                L'application aide les experts-comptables à renforcer leur devoir de conseil en leur signalant, à partir de jurisprudences analysées par l'IA, les raisons de condamnations encourues en cas de manquement.
+            <h3>Architecture</h3>
+            <p>
+                Pour développer ce POC :
+                <ul> 
+                    <li>Le frontend est construit avec React pour une interface fluide et moderne.</li>
+                    <li>Le backend repose sur FastAPI</li>
+                    <li>Les jurisprudences sont stockées dans une base de données MongoDB</li>
+                    <li>Le tout renforcé par des modèles <b>Mistral sur-mesure grâce au fine-tuning.</b> Ces derniers sont utilisés pour savoir si l'expert-comptable est condamné ou non 
+                    ainsi que les raisons. Un LLM est nécessaire car il faut comprendre l'article, le vocabulaire juridique et les subtilités de la décision rendue (cassation, rejet etc...).
+                    <br/><br/>Une solution à base de conditions serait moins performante car l'expert-comptable peut-être condamné en cour d'appel et qu'au final la cour de cassation soit d'accord et 
+                    accepte le pourvoi : <b>soit une décision négative.</b></li>
+                </ul>
+            </p>
+            <i>Le projet est toujours en développement</i>
+            
+            <h3>Offcial screenshots :</h3>
+            <a target="_blank" href="../images/screenshot-devoirdeconseil-1.jpg">
+                <img src="../images/screenshot-devoirdeconseil-1.jpg">
+            </a>
+            <a target="_blank" href="../images/screenshot-devoirdeconseil-2.jpg">
+                <img src="../images/screenshot-devoirdeconseil-2.jpg">
+            </a>
+        </div>
+        <footer>
+            <small>© Copyright 2023 | Victorien Flon-Beulin <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">RGPD</a></small>
+        </footer>
+    </body>
+</html>
