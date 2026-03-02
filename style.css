@@ -285,6 +285,10 @@ nav ul {
     background-color: #F69625;
 }
 
+.bg-rust {
+    background-color: #EA580B;
+}
+
 .bg-xapi, .bg-bs {
     background-color: #338CB2;
 }
